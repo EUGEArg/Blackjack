@@ -24,7 +24,7 @@
       <div class="paño">
         <div class="jugador">
             <h1>Jugador <small>0</small></h1>
-            <div id="jugador-cartas"></div>
+            <div id="jugador-cartas" class="div-cartas"></div>
         <!-- <img class="carta" src="assets/cartas/2D.png"> -->
         </div>
         <div id="mjeUsuario">
@@ -32,13 +32,13 @@
        </div>
         <div class="crupier">
           <h1>Crupier <small>0</small></h1>
-          <div id="computadora-cartas"></div>
+          <div id="computadora-cartas" class="div-cartas"></div>
           <!-- <img class="carta" src="assets/cartas/2C.png"> -->
         </div>
       </div>
       <div> 
-       <button id="btn-Pedir" class="bnt-juego">Pedir Carta</button>
-      <button id="btn-Detener" class="bnt-juego">Plantarse</button> 
+       <button id="btn-Pedir" disabled="disabled" class="bnt-juego">Pedir Carta</button>
+      <button id="btn-Detener" disabled="disabled" class="bnt-juego">Plantarse</button> 
      </div>
      
      <footer>Copyright © 2022 EugeARG</footer>
@@ -48,9 +48,15 @@
 
 
   <script src="javascript/underscore-min.js"></script>
-  <script src="javascript/app.js"></script>
+  <script src="javascript/app-min.js"></script>
   
-  
+  <!-- Inicio de juego -->
+  <script>
+    document.querySelector("#btn-Nuevo").addEventListener("click", () => {
+      miModulo.nuevoJuego();
+    })
+    
+  </script>
 
   </body>
 </html>
