@@ -55,6 +55,7 @@ body {
 }
 
 footer {
+  font-family: 'Source Sans Pro', sans-serif;
   color: white;
   font-size: 16px;
   padding-top: 15px;
@@ -63,17 +64,23 @@ footer {
   width: 100%;
 } 
 
- @media (max-width: 600px) {
-  #contenedor {
+ @media (max-width: 768px) {
+  .contenedor {
     margin: 0;
   }
 
   .paño {
     flex-direction: column;
-    height: 480px;
-    margin: 0 40px 0 40px;
-   
-    margin: 0;
+    height: 65vh;
+  }
+
+  .titulo {
+    padding-top: 0;
+  }
+
+  .bnt-juego {
+    margin: 5px 20px;
+    padding: 5px;
   }
 
   .carta {
@@ -87,7 +94,6 @@ footer {
 
   h1 {
     font-size: 25px;
-    padding: 3px;
     margin: 3px;
   }
 
@@ -95,6 +101,12 @@ footer {
     font-size: 25px;
     position: inherit;  
   } 
+
+  footer {
+    height: 7vh;
+    font-size: 12px;
+
+  }
  }
 
   
