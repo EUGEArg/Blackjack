@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Arapey&family=Gideon+Roman&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Tenor+Sans&display=swap");
-/* font-family: 'Tenor Sans', sans-serif; para los botones */
 
 body {
   height: 100vh;
-  background-image: url(https://cdn.wallpapersafari.com/63/69/NsFwY8.jpg);
+  background-image: url(./assets/sin-tit.jpg);
+  overflow: hidden;
 }
 
 .titulo {
@@ -14,37 +12,39 @@ body {
   padding: 10px;
   margin-top: 10px;
   font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-#contenedor {
+.contenedor {
   text-align: center;
   margin: 20px 0 30px 0;
 }
 
 .bnt-juego {
-  font-family: "Tenor Sans", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px;
   margin: 10px 25px 10px 25px;
-  padding: 5px;
+  padding: 8px;
 }
 
 .paño {
-  height: 350px;
+  height: 60vh;
   color: white;
-  font-family: "Arapey", serif;
+  font-family: 'Source Sans Pro', sans-serif;
   display: flex;
   justify-content: space-around;
-  padding: 10px;
-  margin: 30px;
+  padding: 18px;
   background-color: rgb(59, 95, 59);
+  border: 4px solid rgb(7, 7, 7);
+  border-radius: 5px;
 }
 
 #mjeUsuario {
-    font-family: 'Tenor Sans', sans-serif;
-  font-size: 40px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 38px;
   color: rgb(250, 237, 237);
-  position: fixed;
-  bottom: 85px;
+  position: absolute;
+  bottom: 100px;
 }
 
 .carta {
@@ -58,6 +58,9 @@ footer {
   color: white;
   font-size: 16px;
   padding-top: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 } 
 
  @media (max-width: 600px) {
